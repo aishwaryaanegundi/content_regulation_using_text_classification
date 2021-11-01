@@ -8,6 +8,7 @@ from torch import optim
 from torch.utils.data import DataLoader, TensorDataset
 from utils import make_vocab, get_vocab, load_data, get_labels
 from models.cnn import CNNTextModel
+
 from torch.utils.data.sampler import SubsetRandomSampler
 import argparse
 
@@ -23,7 +24,7 @@ MIN_COUNT = 1
 MAX_LEN = 100
 BATCH_SIZE = 64
 EMBEDDING_DIM = 128
-EPOCHS = 10
+EPOCHS = 20
 VALIDATION_SPLIT = 0.2
 RANDOM_SEED = 32
 
